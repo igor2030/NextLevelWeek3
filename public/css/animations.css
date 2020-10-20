@@ -1,4 +1,12 @@
 /* animações */
+@keyframes appear {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes up {
   from {
     opacity: 0;
@@ -31,4 +39,10 @@
   animation-name: right;
   animation-duration: 300ms;
 
+}
+
+.animate-appear{
+  animation-name: appear;
+  animation-duration: 300ms;
+  animation-fill-mode: backwards;
 }
